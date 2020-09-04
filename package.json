@@ -1,0 +1,50 @@
+{
+  "name": "hamonize-amtctl",
+  "version": "1.0.0",
+  "description": "AMT Manager for HamoniKR",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodejs hamonize-amt.js",
+    "build": "pkg .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "meshcentral": "./bin/meshcommander",
+    "app": "."
+  },
+  "pkg": {
+    "assets": [
+      "public/**/*",
+      "bin/**/*"
+    ]
+  },
+  "files": [
+    "*.js",
+    "license.txt",
+    "readme.txt",
+    "public",
+    "bin"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-ws": "^2.0.0",
+    "minimist": "^1.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@pms.invesume.com:7999/~hckim/amt-webcmd.git"
+  },
+  "keywords": [
+    "intel",
+    "amt",
+    "hamonikr",
+    "vpro"
+  ],
+  "author": "HamoniKR Team <hamonikr-packages@googlegroups.com>",
+  "license": "Apache-2.0",
+  "readme": "readme.txt",
+  "devDependencies": {
+    "electron": "^5.0.2",
+    "pkg": "^4.4.0"
+  }
+}
